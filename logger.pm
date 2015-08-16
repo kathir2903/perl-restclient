@@ -37,6 +37,7 @@ sub initlog {
         "log4perl.appender.console.utf8" => 1,
         "log4perl.appender.console.layout" => "Log::Log4perl::Layout::PatternLayout",
         "log4perl.appender.console.layout.ConversionPattern" => "[%d] %F %L %p - %m%n",
+        "log4perl.appender.LOGFILE" => "Log::Dispatch::FileRotate",
         "log4perl.appender.LOGFILE" =>"Log::Log4perl::Appender::File",
         "log4perl.appender.LOGFILE.filename"  =>    $params{file},
         "log4perl.appender.LOGFILE.mode" => "append",
